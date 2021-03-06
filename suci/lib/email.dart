@@ -46,7 +46,7 @@ class Email extends StatelessWidget {
                     bottomRight: Radius.circular(10)),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.white.withOpacity(1.0),
+                    color: Colors.grey.withOpacity(1.0),
                     spreadRadius: 5,
                     blurRadius: 7,
                     offset: Offset(0, 3), // changes position of shadow

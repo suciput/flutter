@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:suci/screens/splash.dart';
 import './email.dart' as email;
 import './provinsi.dart' as provinsi;
 import './kota.dart' as kota;
@@ -10,7 +10,7 @@ void main() {
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Tampilan Tab Bar",
-    home: new HalamanPertama(),
+    home: new SplashScreen(),
   ));
 }
 class HalamanPertama extends StatelessWidget {
@@ -21,27 +21,6 @@ class HalamanPertama extends StatelessWidget {
       title: Text('Halaman Pertama'),     
     ),     
      
-   body: Column(
-        children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Container(
-                child: RaisedButton(
-                  child: Text('Halaman Pertama'),
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Home()));
-                  },
-                ),
-              ),
-            ],
-          ), 
-             
-        ],
-   ),
         );   
     } 
 } 
